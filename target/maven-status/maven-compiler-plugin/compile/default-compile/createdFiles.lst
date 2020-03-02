@@ -1,0 +1,10 @@
+newsplatfrom\News.class
+newsplatfrom\Repository\NewsRepository.class
+newsplatfrom\Controller.class
+newsplatfrom\RegService.class
+newsplatfrom\SecurityConfig.class
+newsplatfrom\User\User.class
+newsplatfrom\User\MyUserDetails.class
+newsplatfrom\Repository\UserRepository.class
+newsplatfrom\App.class
+newsplatfrom\User\MyUserDetailsService.class
