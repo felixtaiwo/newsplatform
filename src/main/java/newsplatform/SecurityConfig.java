@@ -1,4 +1,4 @@
-package newsplatfrom;
+package newsplatform;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -22,9 +22,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
          http
                  .authorizeRequests()
+                 .antMatchers("/").hasAuthority("ADMIN")
                  .antMatchers("/delete/**").hasAuthority("ADMIN")
                  .antMatchers("/getAllUsers").hasAuthority("ADMIN")
                  .antMatchers("/postNews").hasAnyAuthority("USER","ADMIN")
+                 .antMatchers("/news/{newsId}/comment").hasAnyAuthority("USER","ADMIN")
                  .antMatchers("/page={page}").permitAll()
                  .antMatchers("/news/{newsId}").permitAll()
                  .and()
@@ -40,4 +42,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public PasswordEncoder getPasswordEncoder (){
          return new BCryptPasswordEncoder();
      }
+
 }

@@ -1,18 +1,17 @@
-package newsplatfrom;
+package newsplatform;
 
+import newsplatform.Comment;
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.type.TextType;
-import org.springframework.stereotype.Service;
+
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import java.util.Date;
+import java.util.*;
 
 @Entity
 public class News {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int newsId;
     @NotNull
     private String newsTitle;
@@ -21,16 +20,20 @@ public class News {
     private String content;
     @CreationTimestamp
     private Date dateAndTime;
+    @OneToMany(mappedBy = "news")
+    private List<Comment> comment = new ArrayList<Comment>();
 
 
     public News() {
     }
 
-    public News(@NotNull String newsTitle, @NotNull String content, Date dateAndTime) {
+
+    public News(int newsId, @NotNull String newsTitle, @NotNull String content, Date dateAndTime, List<Comment> comments) {
+        this.newsId = newsId;
         this.newsTitle = newsTitle;
         this.content = content;
         this.dateAndTime = dateAndTime;
-
+        this.comment = comment;
     }
 
     public int getNewsId() {
@@ -63,6 +66,14 @@ public class News {
 
     public void setDateAndTime(Date dateAndTime) {
         this.dateAndTime = dateAndTime;
+    }
+
+    public List<Comment> getComment() {
+        return comment;
+    }
+
+    public void setComment(List<Comment> comment) {
+        this.comment = comment;
     }
 
 }

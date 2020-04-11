@@ -1,13 +1,13 @@
-package newsplatfrom;
+package newsplatform;
 
-import newsplatfrom.Repository.NewsRepository;
-import newsplatfrom.User.User;
+import newsplatform.User.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Slice;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 
-import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -21,7 +21,8 @@ public class Controller {
         return "Registration successful!";
     }
     @RequestMapping("/getAllUsers")
-    public List<User> getAll(){
+    public Slice<User> getAll(){
+
         return regService.getall();
     }
     @RequestMapping(value ="/page={page}")
@@ -42,9 +43,15 @@ public class Controller {
         regService.deleteNews(id);
         return "News Successfully deleted";
     }
-    @RequestMapping(value="/delete/user/{emailAddress}", method = RequestMethod.DELETE)
-    public String deleteUser(@PathVariable String emailAddress) {
-        regService.deleteUser(emailAddress);
+    @RequestMapping(value="/delete/user/{userId}", method = RequestMethod.DELETE)
+    public String deleteUser(@PathVariable int userId) {
+        regService.deleteUser(userId);
         return "User Successfully Deleted";
+    }
+    @RequestMapping(value="/news/{newsId}/comment", method = RequestMethod.POST)
+    public String addComment(@RequestBody Comment comment, @PathVariable int newsId) {
+        comment.setNews(new News(newsId,"","",null,null));
+        regService.addComment(comment);
+        return "comment added successfully";
     }
 }

@@ -1,29 +1,30 @@
-package newsplatfrom;
+package newsplatform;
 
-import newsplatfrom.Repository.NewsRepository;
-import newsplatfrom.User.User;
+import newsplatform.Comment;
+import newsplatform.News;
+import newsplatform.Repository.CommentRepository;
+import newsplatform.Repository.NewsRepository;
+import newsplatform.User.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
 public class RegService {
     @Autowired
-    newsplatfrom.Repository.UserRepository UserRepository;
+    newsplatform.Repository.UserRepository UserRepository;
     @Autowired
     NewsRepository newsRepository;
+    @Autowired
+    CommentRepository commentRepository;
     public void addUser(User users) {
         UserRepository.save(users);
     }
-    public List<User> getall(){
-        return UserRepository.findAll();
+    public Slice<User> getall(){
+        return UserRepository.findIt();
     }
     public Page<News> getallNews(int page) {
         Pageable paging = PageRequest.of(page, 10, Sort.Direction.DESC, "dateAndTime");
@@ -32,13 +33,16 @@ public class RegService {
     public void postNews(News news) {
         newsRepository.save(news);
     }
+    public Comment addComment(Comment comment) {
+        return commentRepository.save(comment);
+    }
 
     public void deleteNews(int id) {
         newsRepository.deleteById(id);
     }
 
-    public void deleteUser(String emailAddress) {
-        UserRepository.deleteByEmailAddress(emailAddress);
+    public void deleteUser(int userId) {
+        UserRepository.deleteById(userId);
     }
 
     public Optional<News> getNews(int newsId) {
