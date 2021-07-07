@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a55460a-5dc3-4b81-abd0-24619726b630" name="Default Changelist" comment="">
+    <list default="true" id="9a55460a-5dc3-4b81-abd0-24619726b630" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/newsplatform/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/RegService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/RegService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/Repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/Repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/Repository/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/Repository/NewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/User/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/User/MyUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/User/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/User/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/newsplatform/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/newsplatform/backend/User/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/NewsPlatform-1.0-SNAPSHOT-spring-boot.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/NewsPlatform-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/NewsPlatform-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,19 +47,13 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1XuNlk9ewP6Zq3li9VmTxI9XrxY" />
   <component name="ProjectLevelVcsManager">
@@ -39,40 +62,49 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StudentProfile" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Desktop\projects\NewsPlatform\src\main\resources" />
+      <recent name="C:\Users\hp\Desktop\projects\NewsPlatform\src\main\java\newsplatform" />
+      <recent name="C:\Users\hp\Desktop\projects\NewsPlatform\src\main\java" />
+      <recent name="C:\Users\hp\Desktop\projects\NewsPlatform\src\main" />
+      <recent name="C:\Users\hp\Desktop\projects\NewsPlatform\src" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="newsplatform" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\Desktop\projects\NewsPlatform\src\main\java\newsplatform" />
       <recent name="C:\Users\hp\Desktop\NewsPlatform\src\test\java\resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="newsplatfrom" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTests">
-    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="newsplatform.App" />
       <module name="NewsPlatform" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="newsplatform.*" />
+          <option name="PATTERN" value="newsplatform.backend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,7 +116,7 @@
       <module name="NewsPlatform" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="newsplatform.*" />
+          <option name="PATTERN" value="newsplatform.backend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,7 +131,7 @@
       <module name="NewsPlatform" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="newsplatform.*" />
+          <option name="PATTERN" value="newsplatform.backend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,7 +147,7 @@
       <module name="NewsPlatform" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="newsplatform.*" />
+          <option name="PATTERN" value="newsplatform.backend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,7 +162,7 @@
       <module name="NewsPlatform" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="newsplatform.*" />
+          <option name="PATTERN" value="newsplatform.backend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,9 +176,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.AppTests" />
         <item itemvalue="JUnit.AppTests.contextLoads" />
-        <item itemvalue="Application.App (1)" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.contextLoads" />
       </list>
@@ -164,6 +196,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -182,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586638421775</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <created>1586639052976</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586639052976</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,126 +231,20 @@
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="275" y="0" width="816" height="768" key="#Intentions" timestamp="1582243034070">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="275" y="0" width="816" height="768" key="#Intentions/0.0.1366.768@0.0.1366.768" timestamp="1582243034070" />
-    <state x="275" y="43" key="#Project_Structure" timestamp="1585776213633">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="275" y="43" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1585776213633" />
-    <state x="413" y="139" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586017763244">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="413" y="139" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1586017763244" />
-    <state x="430" y="187" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582005426478">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="430" y="187" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1582005426478" />
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1586326255023">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1586326255023" />
-    <state x="333" y="310" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586525084230">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="333" y="310" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.768@0.0.1366.768" timestamp="1586525084230" />
-    <state x="479" y="244" width="407" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586604906150">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="479" y="244" width="407" height="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1586604906150" />
-    <state x="479" y="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1586525086771">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="479" y="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.768@0.0.1366.768" timestamp="1586525086771" />
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584661281846">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1584661281846" />
-    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1586638415985">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586638415985" />
-    <state x="92" y="92" width="1182" height="584" key="DiffContextDialog" timestamp="1584734061056">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="92" y="92" width="1182" height="584" key="DiffContextDialog/0.0.1366.768@0.0.1366.768" timestamp="1584734061056" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1586634472941">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1586634472941" />
-    <state width="1323" height="209" key="GridCell.Tab.0.bottom" timestamp="1586637533409">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="209" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586637533409" />
-    <state width="1323" height="209" key="GridCell.Tab.0.center" timestamp="1586637533408">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="209" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586637533408" />
-    <state width="1323" height="209" key="GridCell.Tab.0.left" timestamp="1586637533408">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="209" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586637533408" />
-    <state width="1323" height="209" key="GridCell.Tab.0.right" timestamp="1586637533408">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="209" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586637533408" />
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1586019320676">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586019320676" />
-    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1586019320676">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1586019320676" />
-    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1586019320676">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1586019320676" />
-    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1586019320676">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1586019320676" />
-    <state x="213" y="39" key="Maven.ArtifactSearchDialog" timestamp="1585776702287">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="213" y="39" key="Maven.ArtifactSearchDialog/0.0.1366.768@0.0.1366.768" timestamp="1585776702287" />
-    <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1586525044599">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="499" y="162" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1586525044599" />
-    <state x="378" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1586633350891">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="378" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1586633350891" />
-    <state x="492" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586638389681">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="492" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1586638389681" />
-    <state x="92" y="92" width="1182" height="584" key="dock-window-1" timestamp="1581998709222">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="92" y="92" width="1182" height="584" key="dock-window-1/0.0.1366.768@0.0.1366.768" timestamp="1581998709222" />
-    <state x="413" y="140" key="extract.method.dialog" timestamp="1581979894332">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="413" y="140" key="extract.method.dialog/0.0.1366.768@0.0.1366.768" timestamp="1581979894332" />
-    <state width="600" height="424" key="javadoc.popup" timestamp="1581969676680">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="600" height="424" key="javadoc.popup/0.0.1366.768@0.0.1366.768" timestamp="1581969676680" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1586281851272">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="11" y="161" key="run.anything.popup.inPresentationMode" timestamp="1586310571942">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="11" y="161" key="run.anything.popup.inPresentationMode/0.0.1366.768@0.0.1366.768" timestamp="1586310571942" />
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1586281851272" />
-    <state x="339" y="36" width="670" height="676" key="search.everywhere.popup" timestamp="1582245369908">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="339" y="36" width="670" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582245369908" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/newsplatform/AppTests.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.1.RELEASE/spring-security-config-5.2.1.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class</url>
+          <line>88</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
